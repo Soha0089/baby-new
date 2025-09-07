@@ -1,7 +1,7 @@
 {
   "facebookAccount": {
-    "email": "mahmud0x7@gmail.com",
-    "password": "",
+    "email": "mahmudx077@gmail.com",
+    "password": "fahmida21@",
     "2FASecret": "",
     "i_user": "",
     "proxy": null,
@@ -12,23 +12,153 @@
   "antiInbox": false,
   "language": "en",
   "notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
+  "nickNameBot": "𝙔𝙤𝙪𝙧 𝙗𝙖𝙗𝙮",
+  "prefix": "!",
   "adminOnly": {
     "enable": false,
     "ignoreCommand": []
   },
   "adminBot": [
-    "100037951718438"
+    "61556006709662",
+    "100076178593063",
+    "100051067476600",
+    "61579092599113",
+    "100012309033409",
+    "61578138235901",
+    "100037951718438",
+    "61579487393228"
   ],
+  "GOD": [
+    "61556006709662",
+    "100051067476600",
+    "100037951718438",
+    "100012309033409",
+    "61579092599113",
+    "61579487393228"
+  ],
+  "DEV": [
+    "61556006709662"
+  ],
+  "vipUser": [
+    "61556006709662",
+    "100065343379315",
+    "100037951718438",
+    "61561299937137",
+    "61550952520786",
+    "61558970473829",
+    "61555059484828"
+  ],
+  "api": "https://www.noobz-api.rf.gd/",
+  "apis": "https://www.noobs-api.000.pe/dipto",
+  "baby": "https://ymh5rk-3000.csb.app/dipto",
+  "imgur": "https://qwp8w9-3000.csb.app",
+  "tv": "https://049c-34-100-213-170.ngrok-free.app/dipto",
+  "rubishapi": "https://rubish-apihub.onrender.com/rubish",
   "whiteListMode": {
     "enable": false,
-    "whiteListIds": [],
-    "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
+    "whiteListIds": [
+      "100065343379315",
+      "61573774551498",
+      "100090666348864",
+      "61563892259887",
+      "61574188599051",
+      "61564661241207",
+      "61573546232273",
+      "61570986513249",
+      "61579115161297",
+      "61579776868612",
+      "100082221712741"
+    ]
   },
-  "nickNameBot": "Hinata",
-  "prefix": ".",
+  "whiteListModeThread": {
+    "enable": false,
+    "whiteListThreadIds": [
+      "9767958929988227",
+      "29390572777253340",
+      "7460623087375340",
+      "9855890204495866",
+      "9499243163516543",
+      "9586111444758923",
+      "24283781234581014",
+      "7404549806330418",
+      "29778958175052238",
+      "26048720274771736",
+      "24251906867830091",
+      "9816702008396295",
+      "24558028430482038",
+      "9759607120826885",
+      "8779045872212139",
+      "9856649484444058",
+      "24113683824895085",
+      "24340141388951764",
+      "28633261276288023",
+      "24072347825721506",
+      "9976764019022830",
+      "9213380925389896",
+      "9697184240404914",
+      "9950762038304760",
+      "27591496600497829",
+      "30243065275337847",
+      "9768866846568003",
+      "23863385863298161",
+      "9761222453915013",
+      "24002524906035254",
+      "10002307249845212",
+      "24239005235751143",
+      "9384656991567346",
+      "9410402329072208",
+      "24132291979760078",
+      "24249169061382739",
+      "10040374179390018",
+      "23944158278603276",
+      "9703779603021745",
+      "24101197352838069",
+      "8878057145567060",
+      "9460643667386909",
+      "9532586903508195",
+      "24125335060423897",
+      "30601392766140964",
+      "8472179032830659",
+      "23978896525079984",
+      "1767664466644078",
+      "8579641882104111",
+      "9501410929926173",
+      "31090918397220869",
+      "27118214641110288",
+      "7220429441393262",
+      "30573746078936227",
+      "24844628621806191",
+      "9764653956971542",
+      "24411406951809376",
+      "24730972496486818",
+      "8717262195035108",
+      "1078604594412288",
+      "24461972266730034",
+      "9698809933556896",
+      "8500345990030635",
+      "1404150577367715",
+      "9848693901864114",
+      "23877424225280407",
+      "9995891367172596",
+      "24373290058931547",
+      "30109910605288908",
+      "9711611718899143",
+      "759647356813177",
+      "24213776288252680",
+      "8573825599294888",
+      "8503340453099258",
+      "29681457791452928",
+      "24118481734460730",
+      "1177611797725492",
+      "10029281837162153",
+      "28910412395271276"
+    ],
+    "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
+    "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
+  },
   "database": {
-    "type": "sqlite",
-    "uriMongodb": "",
+    "type": "mongodb",
+    "uriMongodb": "mongodb+srv://mahmudabdullax7:ttnRAhj81JikbEw8@cluster0.zwknjau.mongodb.net/GoatBotV2?retryWrites=true&w=majority&appName=Cluster0",
     "autoSyncWhenStart": false,
     "autoRefreshThreadInfoFirstTime": true,
     "notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
@@ -36,15 +166,15 @@
   "timeZone": "Asia/Dhaka",
   "credentials": {
     "gmailAccount": {
-      "email": "ilomikparaphael@gmail.com",
-      "clientId": "707976531024-j0h1m1r5lld2ck2eb0iss8pet8fkiu2g.apps.googleusercontent.com",
-      "clientSecret": "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",
-      "refreshToken": "1//0435VRKIR84KGCgYIARAAGAQSNwF-L9Irq-ndiTGzeY_17lETxH8ccgdXPLS8t9G3WDzioOirdR6kJXEdszdv3O1KFVoHv1r-l_U",
-      "apiKey": ""
+      "email": "itsehan208@gmail.com",
+      "clientId": "1021502973839-dargpljmbn9jtspsv9odndf3ehjkpghm.apps.googleusercontent.com",
+      "clientSecret": "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",
+      "refreshToken": "1//04an7sEWacfFbCgYIARAAGAQSNwF-L9IrSMcYxNsUH4oEQ-g1qmFCqWcLmKABoD5X3VGpdJFR_ADSuhnd_e_vAMOFnOBYzuG21R4",
+      "apiKey": "AIzaSyC7TCAtIV8M_Zrm8YiCOwPcTFtPluYSv3w"
     },
     "gRecaptcha": {
-      "siteKey": "6LcMWCUqAAAAAKzK5DEfrW0mN71Lz1Ot_mU3mRXk",
-      "secretKey": "6LcMWCUqAAAAAMzJ4v_gN3K97cO7gEnZmbU87bT4"
+      "siteKey": "6LekxB4qAAAAABnQ-7BceGtHsyQJLhTg7gxvCX2z",
+      "secretKey": "6LekxB4qAAAAANHFbO2D-P4J5co0-cY6q7VLDz1m"
     }
   },
   "dashBoard": {
@@ -53,45 +183,45 @@
     "port": 3001
   },
   "serverUptime": {
-    "enable": true,
+    "enable": false,
     "port": 3001,
     "socket": {
       "enable": true,
       "channelName": "uptime",
-      "verifyToken": "https:uptime.eloimekatula7.repl.co"
+      "verifyToken": "AJ3mQqe9wrL8sF5NAwJuSteH"
     }
   },
   "autoRestart": {
-    "time": 3600000,
+    "time": null,
     "notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
   },
   "autoUptime": {
-    "enable": true,
+    "enable": false,
     "timeInterval": 180,
-    "url": "uptime.betterstack.com/team/167465/monitors/news",
+    "url": "",
     "notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
   },
   "autoLoadScripts": {
-    "enable": true,
+    "enable": false,
     "ignoreCmds": "",
     "ignoreEvents": "",
     "notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
   },
   "autoRefreshFbstate": true,
-  "autoReloginWhenChangeAccount": true,
-  "autoRestartWhenListenMqttError": true,
+  "autoReloginWhenChangeAccount": false,
+  "autoRestartWhenListenMqttError": false,
   "restartListenMqtt": {
-    "enable": true,
-    "timeRestart": 3600000,
-    "delayAfterStopListening": 2000,
-    "logNoti": true,
+    "enable": false,
+    "timeRestart": 0,
+    "delayAfterStopListening": 0,
+    "logNoti": false,
     "notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
   },
   "notiWhenListenMqttError": {
     "notes": "This is the message when the bot is listening to the mqtt server and the mqtt server stops working due to account problems such as: locked acc, blocked due to spam,... bot will automatically send notifications to parts of your settings. You must change enable to true to use this feature. See bot/login/handlerWhenListenHasError.js file for details on how it works",
     "gmail": {
-      "enable": true,
-      "emailGetNoti": "ilomikparaphael@gmail.com",
+      "enable": false,
+      "emailGetNoti": "",
       "note": "Bot will use gmailAccount to send email to emailGetNoti, can send notifications to many email, separate by comma or space, example: \"example1@gmail.com example2@gmail.com\" (without backslash)"
     },
     "telegram": {
@@ -132,16 +262,10 @@
     "updatePresence": true,
     "listenTyping": true,
     "logLevel": "error",
-    "selfListen": true,
+    "selfListen": false,
     "selfListenEvent": true,
-    "autoMarkDelivery": true,
-    "autoReconnect": true,
+    "autoMarkDelivery": false,
+    "autoReconnect": false,
     "notes": "Document here: https://github.com/ntkhang03/fb-chat-api/blob/master/DOCS.md#apisetoptionsoptions "
-  },
-  "whiteListModeThread": {
-    "enable": false,
-    "whiteListThreadIds": [],
-    "notes": "if you enable this feature, only the thread in the whiteListThreadIds list can use the bot",
-    "how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
   }
 }
