@@ -43,7 +43,7 @@ module.exports = {
 
     const isVip = await checkVip(event.senderID);
     if (!isVip) {
-      return message.reply("🥹 𝐁𝐚𝐛𝐲, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐕𝐈𝐏 𝐮𝐬𝐞𝐫");
+      return message.reply(">🥹\n𝐁𝐚𝐛𝐲, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐕𝐈𝐏 𝐮𝐬𝐞𝐫");
     }
     
     // Obfuscated author name check
