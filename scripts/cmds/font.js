@@ -9,7 +9,7 @@ module.exports.config = {
   name: "style",
   aliases: ["font"],
   version: "1.7",
-  role: 0,
+  role: 2,
   countDowns: 5,
   author: "MahMUD",
   category: "general",
