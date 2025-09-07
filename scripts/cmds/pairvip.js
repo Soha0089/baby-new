@@ -37,7 +37,7 @@ aliases: ["pair11", "pvip", "p"],
     };
 
     const isVip = await checkVip(event.senderID);
-    if (!isVip) return api.sendMessage("🥹 𝐁𝐚𝐛𝐲, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐕𝐈𝐏 𝐮𝐬𝐞𝐫", event.threadID, event.messageID);
+    if (!isVip) return api.sendMessage(">🥹\n𝐁𝐚𝐛𝐲, 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐧𝐨𝐭 𝐚 𝐕𝐈𝐏 𝐮𝐬𝐞𝐫", event.threadID, event.messageID);
 
     const pathImg = __dirname + "/cache/background.png";
     const pathAvt1 = __dirname + "/cache/Avtmot.png";
