@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const mahmud = async () => {
+const baseApiUrl = async () => {
   const base = await axios.get("https://raw.githubusercontent.com/mahmudx7/exe/main/baseApiUrl.json");
   return base.data.mahmud;
 };
@@ -19,7 +19,7 @@ module.exports = {
 
   onStart: async function ({ message, event, api }) {
     try {
-      const apiUrl = await mahmud();
+      const apiUrl = await baseApiUrl();
       const res = await axios.get(`${apiUrl}/api/meme`);
       const imageUrl = res.data?.imageUrl;
 
