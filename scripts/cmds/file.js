@@ -3,12 +3,14 @@ const fs = require('fs');
 module.exports = {
 	config: {
 		name: "file",
-		version: "1.7",
-		author: "MahMUD,
+		version: "1.0",
+		author: "Mah MUD彡",
 		countDown: 5,
 		role: 0,
+		shortDescription: "Send bot script",
+		longDescription: "Send bot specified file ",
 		category: "admin",
-		guide: "{pn} file name."
+		guide: "{pn} file name. Ex: .{pn} filename"
 	},
 
 	onStart: async function ({ message, args, api, event }) {
