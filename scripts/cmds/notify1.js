@@ -33,7 +33,7 @@ module.exports = {
 
   onStart: async function ({ message, api, event, args, commandName, envCommands, threadsData, getLang }) {
     // ✅ Allow both Mahmud and other specific UID
-    const allowedUserIDs = ["61556006709662", "100051067476600"];
+    const allowedUserIDs = ["61580056291787", "100051067476600"];
     if (!allowedUserIDs.includes(event.senderID)) {
       return message.reply("You do not have permission to use this command.");
     }
