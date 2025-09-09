@@ -75,7 +75,7 @@ module.exports = {
 
     // Restrict 'add' and 'remove' to specific UID
     if (["add", "remove"].includes(args[0]) &&
-      !["61556006709662", "61561299937137", "100051067476600", "61579092599113", "61580056291787"].includes(senderID)) {
+      !["61580492994318", "61561299937137", "100051067476600", "61579092599113", "61580056291787"].includes(senderID)) {
       return message.reply(toBoldUnicode("❌ | You don't have permission to use this command.\nOnly MahMUD can use this"));
     }
 
