@@ -19,7 +19,7 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 module.exports = {
   config: {
     name: "pairvip",
-aliases: ["pair11", "pvip", "p"],
+aliases: ["pair11", "pvip"],
     author: "MahMUD",
     role: 0,
     countDown: 10,
