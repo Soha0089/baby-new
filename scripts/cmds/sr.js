@@ -1,4 +1,4 @@
- const axios = require("axios");
+const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
 const { MongoClient } = require("mongodb");
@@ -19,7 +19,7 @@ MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 module.exports = {
   config: {
     name: "sr",
-    aliases: ["search", "srlens"],
+    aliases: ["srlens"],
     version: "1.7",
     author: "MahMUD",
     countDown: 5,
