@@ -1,12 +1,11 @@
 const axios = require("axios");
-const fs = require("fs-extra");
 
 module.exports = {
   config: {
     name: "ffinfo",
     aliases: ["ffuid"],
-    version: "1.1",
-    author: "Raihan (Converted) + MahMUD Edit",
+    version: "1.0",
+    author: "Mahmud (Converted)",
     role: 0,
     shortDescription: "Get Free Fire player info",
     longDescription: "Fetches Free Fire player profile info using UID",
@@ -16,16 +15,20 @@ module.exports = {
 
   onStart: async function ({ api, event, args }) {
     const uid = args[0];
-    if (!uid) return api.sendMessage("⚠️ Please provide a Free Fire UID.", event.threadID, event.messageID);
+    if (!uid) {
+      return api.sendMessage("⚠️ Please provide a Free Fire UID.", event.threadID, event.messageID);
+    }
 
     try {
-      const res = await axios.get(`https://info-ina-1.onrender.com/info?uid=${uid}`);
+      const res = await axios.get(`https://mahmud-global-apis.onrender.com/api/ffinfo?uid=${uid}`);
       const data = res.data;
 
-      if (data.error) return api.sendMessage(`❌ ${data.error}`, event.threadID, event.messageID);
+      if (data.error) {
+        return api.sendMessage(`❌ ${data.error}`, event.threadID, event.messageID);
+      }
 
-      let msg = `🎮 Player Information 🎮\n\n`;
-      msg += `👤 Name: ${data.nickname}\n`;
+      let msg = `🎮 Free Fire Player Info 🎮\n\n`;
+      msg += `👤 Name: ${data.name}\n`;
       msg += `🆔 UID: ${data.uid}\n`;
       msg += `⭐ Level: ${data.level} (Exp: ${data.exp})\n`;
       msg += `🌍 Region: ${data.region}\n`;
@@ -47,18 +50,7 @@ module.exports = {
         msg += `🔑 Leader: ${data.guild.leader}\n`;
       }
 
-      // ✅ Profile Image fetch & send
-      let attachment = [];
-      if (data.avatar) {
-        const imgPath = __dirname + `/cache/${uid}.jpg`;
-        const imgRes = await axios.get(data.avatar, { responseType: "arraybuffer" });
-        fs.writeFileSync(imgPath, Buffer.from(imgRes.data, "binary"));
-        attachment.push(fs.createReadStream(imgPath));
-      }
-
-      api.sendMessage({ body: msg, attachment }, event.threadID, () => {
-        if (attachment.length > 0) fs.unlinkSync(__dirname + `/cache/${uid}.jpg`);
-      }, event.messageID);
+      api.sendMessage(msg, event.threadID, event.messageID);
 
     } catch (err) {
       console.error(err);
